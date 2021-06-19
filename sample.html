@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is a Practice for JavaScript</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .section{
+            height: 300px;
+            width: 500px;
+            /* background-color: gray; */
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 100px;
+            box-shadow: 0px 0px 2px 0px #000;
+            border-radius: 2px;
+        }
+        .section_head{
+            padding: 2px;
+            background-color: #5cb85c;
+            color: #fff;
+        }
+        .section_body{
+            padding-top: 30px;
+        }
+        .section_body input {
+            padding: 5px;
+        }
+        .section_body2{
+            padding: 20px;
+            
+        }
+        .section_body2 button {
+            padding: 4px 10px 4px 10px;
+            background-color: #1f8ef0;
+            color: #fff;
+            border: 1px solid rgb(49, 49, 49);
+        }
+        span {
+            overflow-x: scroll;
+        }
+    </style>
+</head>
+<body>
+    
+
+
+    <div class="section">
+        <div class="section_head">
+            <h2><center>Determine Prime Numbers</center></h2>
+        </div>
+
+        <div class="section_body">
+            <label class="">Enter A Number Range: </label>
+            <input class="input_box" id="input_num" type="text">
+        </div>
+        <div class="section_body2">
+            <button class="submit_button" onclick="submit_Num()">Submit</button>
+            <br>
+            <br>
+            <label class="res">Result: <span id="length_Count"></span></label>
+            <div style="overflow-x: auto">
+                <span id="result_Container"></span>
+            </div>
+        </div>
+    </div>
+    <script src="sample.js"></script>
+</body>
+</html>
